@@ -35,7 +35,6 @@ def position_taken?(board,position)
   end
 end
 
-board = [" ", " ", " "]
-def update_array_at_with(board, position, value)
-  board[position] = value
+def update_array_at_with(board, position, user_input)
+  board[position] = user_input
 end
