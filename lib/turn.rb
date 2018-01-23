@@ -12,8 +12,7 @@ def display_board(board)
 end
 
 def input_to_index(board)
-  input = gets.chomp
-  
+  gets.string.to_i - 1
 end
 
 def valid_move?(board,position)
@@ -36,5 +35,10 @@ def position_taken?(board,position)
     else   board[position] == "X" || "O"
     true
   end
+end
+
+board = [" ", " ", " "]
+def update_array_at_with(board, position, value)
+  board[position] = value
 end
 end
