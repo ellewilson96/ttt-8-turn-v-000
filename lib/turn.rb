@@ -49,6 +49,5 @@ def turn(board)
     puts "try again"
     turn(board)
 end
-end
   display_board(board)
 end
