@@ -11,7 +11,8 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  user_input = gets.chomp.to_i - 1
+  user_input = gets
+  user_input.to_i - 1
 end
 
 def valid_move?(board,position)
