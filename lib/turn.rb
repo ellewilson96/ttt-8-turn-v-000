@@ -17,9 +17,10 @@ end
 
 def valid_move?(board,position)
   if not position.between?(0,8) && position_taken?
-    true
+    puts display_board
   else
-     false
+     puts "Please enter 1-9:"
+     until valid_move? == true
   end
 end
 
