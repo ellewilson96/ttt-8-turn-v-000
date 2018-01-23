@@ -23,6 +23,7 @@ def valid_move?(board,position)
      until valid_move? == true
   end
 end
+end
 
 def position_taken?(board,position)
   if board[position] == " "
