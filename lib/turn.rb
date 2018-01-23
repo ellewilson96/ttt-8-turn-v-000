@@ -16,7 +16,7 @@ def input_to_index(board)
   input.to_i = position
 end
 
-def valid_move?
+def valid_move?(board,position)
   if board[position].to_i == between?(1,9)
     true
   if position_taken? == "false"
