@@ -3,21 +3,8 @@ def input_to_index(move)
    position
 end
 
-def turn(board)
-  puts "Please enter 1-9:"
-  user_input = gets.strip
-  position = input_to_index(user_input)
-  if valid_move?(board,position)
-    puts "valid move"
-    move(board, position, token)
-    display_board(board)
-  else
-    puts "try again"
-    turn(board)
-    until valid_move? == true
-end
-end
-  display_board(board)
+def move(board, position, token = "X")
+  board[position] = token
 end
 
 def display_board(board)
@@ -50,6 +37,20 @@ def position_taken?(board,position)
   end
 end
 
-def move(board, position, token = "X")
-  board[position] = token
+def turn(board)
+  puts "Please enter 1-9:"
+  user_input = gets.strip
+  position = input_to_index(user_input)
+  if valid_move?(board,position)
+    puts "valid move"
+    move(board, position, token)
+    display_board(board)
+  else
+    puts "try again"
+    turn(board)
+    until valid_move? == true
 end
+end
+  display_board(board)
+end
+
