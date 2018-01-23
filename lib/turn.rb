@@ -13,7 +13,7 @@ end
 
 def input_to_index(board)
   input = gets.chomp
-  input.to_i-1 = position
+  
 end
 
 def valid_move?(board,position)
