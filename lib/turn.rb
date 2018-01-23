@@ -39,4 +39,3 @@ board = [" ", " ", " "]
 def update_array_at_with(board, position, value)
   board[position] = value
 end
-
