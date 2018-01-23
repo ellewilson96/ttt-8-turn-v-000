@@ -50,6 +50,6 @@ def position_taken?(board,position)
   end
 end
 
-def move(board, position, user_input)
-  board[position] = user_input
+def move(board, position, token)
+  board[position] = token 
 end
