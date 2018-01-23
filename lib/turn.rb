@@ -1,6 +1,6 @@
 def input_to_index(move)
-   index = move.to_i - 1
-   index
+   position = move.to_i - 1
+   position
 end
 
 def turn(board)
