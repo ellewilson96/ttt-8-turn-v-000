@@ -12,7 +12,7 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  (gets).to_i - 1
+  user_input = (gets.string).to_i - 1
 end
 
 def valid_move?(board,position)
