@@ -9,7 +9,7 @@ def turn(board)
   position = input_to_index(user_input)
   if valid_move?(board,position)
     puts "valid move"
-    move(board, position, token)
+    move(board, position)
     display_board(board)
   else
     puts "try again"
@@ -50,6 +50,6 @@ def position_taken?(board,position)
   end
 end
 
-def move(board, position, token)
+def move(board, position)
   board[position] = token 
 end
