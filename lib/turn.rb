@@ -13,11 +13,11 @@ end
 def input_to_index(user_input)
   gets = user_input
   user_input.to_i - 1
-  
+
 end
 
 def valid_move?(board,position)
-  if position.to_i.between?(1,9) && position_taken?
+  if user_input.between?(0,8) && position_taken?
     true
   else
      false
