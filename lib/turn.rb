@@ -11,8 +11,8 @@ def display_board(board)
   puts "   " "|" "   " "|" "   "
 end
 
-def input_to_index
-  input = gets
+def input_to_index(board)
+  gets.input
   input.to_i = position
 end
 
