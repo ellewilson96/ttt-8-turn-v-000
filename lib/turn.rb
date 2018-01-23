@@ -28,13 +28,12 @@ end
 
 
 def valid_move?(board,position)
-  if not board[position].between?(0,8) && position_taken?
-    puts display_board
+  if position.between?(0,8) && !position_taken?(board,position)
+    puts "this is a valid move"
+    return true
   else
-     puts "Please enter 1-9:"
-     until valid_move? == true
+     return false
   end
-end
 end
 
 def position_taken?(board,position)
