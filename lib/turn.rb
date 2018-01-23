@@ -11,17 +11,15 @@ def display_board(board)
   puts "   " "|" "   " "|" "   "
 end
 
-def input_to_index(board)
-  gets.string.to_i - 1
+def input_to_index(user_input)
+  (gets.user_input).to_i - 1
 end
 
 def valid_move?(board,position)
-  if board[position].to_i == between?(1,9)
-    true
-  if position_taken? == "false"
+  if  position.to_i.between?(1,9) && position_taken?
     true
   else
-    false
+     false
   end
 end
 
