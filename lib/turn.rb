@@ -14,6 +14,7 @@ def turn(board)
   else
     puts "try again"
     turn(board)
+    until valid_move? == true
 end
   display_board(board)
 end
