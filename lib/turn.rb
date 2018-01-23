@@ -16,7 +16,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board,position)
-  if not position.between?(0,8) && position_taken?
+  if not board[position].between?(0,8) && position_taken?
     puts display_board
   else
      puts "Please enter 1-9:"
