@@ -3,8 +3,8 @@ def input_to_index(move)
    position
 end
 
-def move(board, position, "X")
-  board[position] = "X"
+def move(board, position, token = "X")
+  board[position] = token
 end
 
 def display_board(board)
@@ -43,7 +43,7 @@ def turn(board)
   position = input_to_index(user_input)
   if valid_move?(board,position)
     puts "valid move"
-    move(board, position, "X")
+    move(board, position, token = "X")
   else
     puts "try again"
     turn(board)
