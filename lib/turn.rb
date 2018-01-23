@@ -16,6 +16,7 @@ def turn(board)
     turn(board)
     until valid_move? == true
 end
+end
   display_board(board)
 end
 
