@@ -10,13 +10,13 @@ def display_board(board)
   puts "   " "|" "   " "|" "   "
 end
 
-def input_to_index(position)
-  gets = position
-  position.to_i - 1
+def input_to_index(user_input)
+  gets = user_input
+  user_input.to_i - 1
 end
 
 def valid_move?(board,position)
-  if board[position].between?(0,8) && position_taken?
+  if position.between?(0,8) && position_taken?
     true
   else
      false
